@@ -4,16 +4,23 @@ const modal = document.querySelector('#modal')
 const closeModalBtn = document.querySelector('#close-modal-btn')
 
 openModalBtn.addEventListener('click', () => {
-    modal.classList.add('open')
-    overlay.classList.add('show')
+    openModal()
 })
 
 closeModalBtn.addEventListener('click', () => {
-    modal.classList.remove('open')
-    overlay.classList.remove('show')
+    closeModal()
 })
 
 overlay.addEventListener('click', () => {
-    modal.classList.remove('open')
-    overlay.classList.remove('show')
+    closeModal()
 })
+
+function openModal() {
+    modal.classList.add('open')
+    overlay.classList.add('show')    
+}
+
+function closeModal() {
+    modal.classList.remove('open')
+    overlay.classList.remove('show')    
+}
