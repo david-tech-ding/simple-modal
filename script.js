@@ -13,5 +13,7 @@ closeModalBtn.addEventListener('click', () => {
     overlay.classList.remove('show')
 })
 
-
-
+overlay.addEventListener('click', () => {
+    modal.classList.remove('open')
+    overlay.classList.remove('show')
+})
