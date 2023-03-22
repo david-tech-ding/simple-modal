@@ -14,7 +14,7 @@
     display: block;
 }
 
-#overlay.open{
+#overlay.show{
     display: block;
     
 }
